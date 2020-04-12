@@ -1,0 +1,11 @@
+<div class="filter" *ngIf="filterFields">
+  <ul class="filter-list">
+    <li class="list__item" *ngFor="let filter of filterFields">
+      <label class="list__item-name">
+        <input type="checkbox" [(ngModel)]="filter.isChecked">
+        {{ filter.title }}
+      </label>
+    </li>
+  </ul>
+  <button class="apply-btn" (click)="applyFilter()">Apply</button>
+</div>

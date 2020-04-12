@@ -1,0 +1,14 @@
+<div class="list-wrapper" *ngIf="drinksData">
+  <div class="category-list__item" *ngFor="let category of drinksData | cocktailsCount">
+    <h3 class="category-list__name">{{ category.title }}</h3>
+    <ul class="drinks-list">
+      <li class="drinks__item" *ngFor="let drinkItem of category.drinks">
+        <img src="{{ drinkItem.strDrinkThumb }}" >
+        <span class="drink-name">{{ drinkItem.strDrink }}</span>
+      </li>
+    </ul>
+  </div>
+
+  <p *ngIf="isLoading" class="loading-block">Loading...</p>
+</div>
+

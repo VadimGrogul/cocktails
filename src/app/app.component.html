@@ -1,0 +1,13 @@
+<header class="header">
+  <div class="header-content">
+    <h3 class="header__name">Cocktails DB</h3>
+    <img src="./assets/images/logo.png" alt="" class="header__logo">
+  </div>
+</header>
+<main class="main-content" *ngIf="!isLoading; else loadingBlock">
+  <app-filter></app-filter>
+  <app-cocktail-list></app-cocktail-list>
+</main>
+<ng-template #loadingBlock>
+  <p class="loading-block">Loading...</p>
+</ng-template>

@@ -1,0 +1,42 @@
+
+:host {
+  width: 25rem;
+  border-right: 1px solid #d0d0d0;
+}
+
+.filter {
+  color: #818181;
+  padding: 3rem 3rem 0 0;
+  position: sticky;
+  top: 0;
+}
+
+.list__item {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+
+  input {
+    margin-right: 1rem;
+  }
+
+  @media screen and (max-width: 550px){
+    margin-bottom: 1.5rem;
+  }
+}
+
+.apply-btn {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  width: 18rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  background: #4e4e4e;
+  border: none;
+  border-radius: 1rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}

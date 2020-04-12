@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 10px;
+  @media (max-width: 996px) {
+    font-size: 8px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 6px;
+  }
+}
+
+ul, ol {
+  list-style: none;
+}
+
+
+
